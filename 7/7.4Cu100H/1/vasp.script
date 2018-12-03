@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH -p debug
+#SBATCH --job-name=vasp-test1
+#SBATCH --output=vasp.out
+#SBATCH --nodes=1
+#SBATCH --time=6:00:00
+
+srun -n 20 --mpi=pmi2  /software/vasp/vasp.5.4.1/bin/vasp_std 

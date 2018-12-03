@@ -1,0 +1,6 @@
+ vasp.5.4.1 24Jun15 (build Nov 22 2018 20:02:54) complex                        
+  
+ executed on           IFC91_ompi date 2018.11.26  14:12:31
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on NCORES_PER_BAND=   1 cores,    1 groups

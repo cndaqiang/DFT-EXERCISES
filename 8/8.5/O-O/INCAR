@@ -1,0 +1,174 @@
+# MAIN
+  ISTART =      0    job   : 0-new  1-cont  2-samecut
+  ICHARG =      2    charge: 1-file 2-atom 10-const
+#  ISPIN  =      1    spin polarized calculation?
+
+   ENCUT  =  500.0 eV  #   36.75 Ry    6.06 a.u.  14.43 14.43 43.64*2*pi/ulx,y,z
+   NELM   =    400;    #   NELMIN=  2; NELMDL=  0     # of ELM steps
+   EDIFF  = 0.1E-04   stopping-criterion for ELM
+   ISMEAR =     0;   
+   SIGMA  =   0.01  broadening in eV -4-tet -1-fermi 0-gaus
+
+   EDIFFG = -0.01  # NEB must < 0  stopping-criterion for IOM
+   NSW    =    500    number of steps for IOM        
+   IBRION =      2    # ionic relax: 0-MD 1-quasi-New 2-CG 5,6 zhendong 
+#   NFREE  =      2 #IBRION=5,6  #zhendong  steps in history (QN), initial steepest desc. (CG)
+   ISIF   =      2   # 2 surface 3 bulk stress and relaxation
+   POTIM  = 0.1000    time-step for ionic-motion   
+   LWAVE  =      F    write WAVECAR
+   LCHARG =      F    write CHGCAR
+   
+   
+#slab LREAL=T
+#   LREAL  =      T    real-space projection
+#slab ji hua correct
+#   LDIPOL =      T    correct potential (dipole corrections)
+#   IDIPOL =      3    1-x, 2-y, 3-z, 4-all directions
+
+#NEB
+#neb
+#IBRION=3
+#POTIM=0
+#IOPT=3
+#ICHAIN=0
+#LCLIMB=.TRUE. #climbing image
+#SPRING=-5
+#IMAGES=5 #image number
+
+# Startparameter for this run:
+            #   NWRITE =      2    write-flag & timer
+            #   PREC   = normal    normal or accurate (medium, high low for compatibility)
+
+            #   LNONCOLLINEAR =      F non collinear calculations
+            #   LSORBIT =      F    spin-orbit coupling
+            #   INIWAV =      1    electr: 0-lowe 1-rand  2-diag
+            #   LASPH  =      F    aspherical Exc in radial PAW
+            #   METAGGA=      F    non-selfconsistent MetaGGA calc.
+            #
+# Electronic Relaxation 1
+
+            #   ENINI  =  500.0     initial cutoff
+            #   ENAUG  =  416.2 eV  augmentation charge cutoff
+
+
+            #   NLSPLINE    = F    spline interpolate recip. space projectors
+            #   LCOMPAT=      F    compatible to vasp.4.4
+            #   GGA_COMPAT  = T    GGA compatible to vasp.4.4-vasp.4.6
+            #   LMAXPAW     = -100 max onsite density
+            #   LMAXMIX     =    2 max onsite mixed and CHGCAR
+            #   VOSKOWN=      0    Vosko Wilk Nusair interpolation
+            #   ROPT   =   -0.00050
+# Ionic relaxation
+
+            #   IWAVPR =     11    prediction:  0-non 1-charg 2-wave 3-comb
+            #   ISYM   =      2    0-nonsym 1-usesym 2-fastsym
+            #   LCORR  =      T    Harris-Foulkes like correction to forces
+            #
+            #   NBLOCK =      1;   KBLOCK =    500    inner block; outer block
+            #   TEIN   =    0.0    initial temperature
+            #   TEBEG  =    0.0;   TEEND  =   0.0 temperature during run
+            #   SMASS  =  -3.00    Nose mass-parameter (am)
+            #   estimated Nose-frequenzy (Omega)   =  0.10E-29 period in steps =****** mass=  -0.143E-26a.u.
+            #   SCALEE = 1.0000    scale energy and forces
+            #   NPACO  =    256;   APACO  = 16.0  distance and # of slots for P.C.
+            #   PSTRESS=    0.0 pullay stress
+            #
+
+
+            #  Mass of Ions in am
+            #   POMASS = 106.42
+            #  Ionic Valenz
+            #   ZVAL   =  10.00
+            #  Atomic Wigner-Seitz radii
+            #   RWIGS  =  -1.00
+            #  virtual crystal weights
+            #   VCA    =   1.00
+            #   NELECT =     320.0000    total number of electrons
+            #   NUPDOWN=      -1.0000    fix difference up-down
+            #
+            # DOS related values:
+            #   EMIN   =  10.00;   EMAX   =-10.00  energy-range for DOS
+            #   EFERMI =   0.00
+
+            #
+            # Electronic relaxation 2 (details)
+            #   IALGO  =     68    algorithm
+            #   LDIAG  =      T    sub-space diagonalisation (order eigenvalues)
+            #   LDIAG  =      T    sub-space diagonalisation (order eigenvalues)
+            #   LSUBROT=      F    optimize rotation matrix (better conditioning)
+            #   TURBO    =      0    0=normal 1=particle mesh
+            #   IRESTART =      0    0=no restart 2=restart with 2 vectors
+            #   NREBOOT  =      0    no. of reboots
+            #   NMIN     =      0    reboot dimension
+            #   EREF     =   0.00    reference energy to select bands
+            #   IMIX   =      4    mixing-type and parameters
+            #     AMIX     =   0.40;   BMIX     =  1.00
+            #     AMIX_MAG =   1.60;   BMIX_MAG =  1.00
+            #     AMIN     =   0.10
+            #     WC   =   100.;   INIMIX=   1;  MIXPRE=   1;  MAXMIX= -45
+            #
+            # Intra band minimization:
+            #   WEIMIN = 0.0010     energy-eigenvalue tresh-hold
+            #   EBREAK =  0.13E-07  absolut break condition
+            #   DEPER  =   0.30     relativ break condition
+            #
+            #   TIME   =   0.40     timestep for ELM
+            #
+            #  volume/ion in A,a.u.               =      46.82       315.96
+            #  Fermi-wavevector in a.u.,A,eV,Ry     =   0.978578  1.849245 13.029147  0.957615
+            #  Thomas-Fermi vector in A             =   2.109365
+            #
+# Write flags
+
+            #   LVTOT  =      F    write LOCPOT, total local potential
+            #   LVHAR  =      F    write LOCPOT, Hartree potential only
+            #   LELF   =      F    write electronic localiz. function (ELF)
+            #   LORBIT =      0    0 simple, 1 ext, 2 COOP (PROOUT)
+            #
+            #
+# Dipole corrections
+            #   LMONO  =      F    monopole corrections only (constant potential shift)
+
+
+
+            #   EPSILON=  1.0000000 bulk dielectric constant
+            #
+            # Exchange correlation treatment:
+            #   GGA     =    --    GGA type
+            #   LEXCH   =     7    internal setting for exchange type
+            #   VOSKOWN=      0    Vosko Wilk Nusair interpolation
+            #   LHFCALC =     F    Hartree Fock is set to
+            #   LHFONE  =     F    Hartree Fock one center treatment
+            #   AEXX    =    0.0000 exact exchange contribution
+            #
+            # Linear response parameters
+            #   LEPSILON=     F    determine dielectric tensor
+            #   LRPA    =     F    only Hartree local field effects (RPA)
+            #   LINTERFAST=   F  fast interpolation
+            #   KINTER  =     0    interpolate to denser k-point grid
+            #   CSHIFT  =0.1000    complex shift for real part using Kramers Kronig
+            #   OMEGAMAX=  -1.0    maximum frequency
+            #   DEG_THRESHOLD= 0.2000000E-02 threshold for treating states as degnerate
+            #   RTIME   =    0.100 relaxation time in fs
+            #
+            # Orbital magnetization related:
+            #   ORBITALMAG=     F  switch on orbital magnetization
+            #   LCHIMAG   =     F  perturbation theory with respect to B field
+            #   DQ        =  0.001000  dq finite difference perturbation B field
+            #
+            #
+            #
+            #   LNABLA  =     F    use nabla operator in PAW spheres
+            #   LVEL    =     F    velocity operator in full k-point grid
+            #   LINTERFAST=   F  fast interpolation
+            #   KINTER  =     0    interpolate to denser k-point grid
+            #   CSHIFT  =0.1000    complex shift for real part using Kramers Kronig
+            #   OMEGAMAX=  -1.0    maximum frequency
+            #   DEG_THRESHOLD= 0.2000000E-02 threshold for treating states as degnerate
+            #   RTIME   =    0.100 relaxation time in fs
+            #
+            # Orbital magnetization related:
+            #   ORBITALMAG=     F  switch on orbital magnetization
+            #   LCHIMAG   =     F  perturbation theory with respect to B field
+            #   DQ        =  0.001000  dq finite difference perturbation B field
+            #

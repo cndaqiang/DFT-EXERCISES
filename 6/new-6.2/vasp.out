@@ -1,0 +1,237 @@
+filetype1: vasp5
+filetype2: vasp5
+WARNING: BASIS VECTORS ARE NOT THE SAME 
+BASIS ELEMENT 0 0 ... 
+... IS IN FILE 1:  10.895195777434
+... IS IN FILE 2:  10.8951956669075
+I HOPE YOU KNOW WHAT YOU ARE DOING
+
+OK, ALL SETUP HERE
+FOR LATER ANALYSIS, PUT OUTCARs IN FOLDERS 00 and 06 !!! 
+ running on   40 total cores
+ each image running on    8 cores
+ distrk:  each k-point on    8 cores,    1 groups
+ distr:  one band on    1 cores,    8 groups
+ vasp.5.4.1 05Feb16 (build Nov 22 2018 20:17:51) complex                        
+  
+ POSCAR found type information on POSCAR  Si
+ 01/POSCAR found :  1 types and      63 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default, NPAR=number of cores might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have a (more or less) 'large supercell' and for larger cells       |
+|      it might be more efficient to use real space projection operators      |
+|      So try LREAL= Auto  in the INCAR   file.                               |
+|      Mind: If you want to do a very accurate calculations keep the          |
+|      reciprocal projection scheme          (i.e. LREAL=.FALSE.)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Ceperly-Alder, standard interpolation
+ POSCAR found type information on POSCAR  Si
+ 00/POSCAR found :  1 types and      63 ions
+ POSCAR found type information on POSCAR  Si
+ 06/POSCAR found :  1 types and      63 ions
+ Jacobian:    21.7332726272699     
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.664052426700E+03    0.66405E+03   -0.93655E+04  6080   0.126E+03
+DAV:   2    -0.270568262683E+03   -0.93462E+03   -0.88982E+03  7216   0.184E+02
+DAV:   3    -0.341562934568E+03   -0.70995E+02   -0.69670E+02  7416   0.442E+01
+DAV:   4    -0.343496932928E+03   -0.19340E+01   -0.19205E+01  7352   0.889E+00
+DAV:   5    -0.343557135831E+03   -0.60203E-01   -0.60028E-01  7392   0.152E+00    0.164E+01
+DAV:   6    -0.339924387641E+03    0.36327E+01   -0.31313E+00  7112   0.282E+00    0.968E+00
+DAV:   7    -0.338412198072E+03    0.15122E+01   -0.41592E+00  6872   0.333E+00    0.120E+00
+DAV:   8    -0.338434746179E+03   -0.22548E-01   -0.30317E-01  7224   0.106E+00    0.475E-01
+DAV:   9    -0.338443788228E+03   -0.90420E-02   -0.36968E-02  7000   0.417E-01    0.173E-01
+DAV:  10    -0.338445436149E+03   -0.16479E-02   -0.81681E-03  6920   0.168E-01    0.580E-02
+DAV:  11    -0.338445601929E+03   -0.16578E-03   -0.59266E-04  7328   0.596E-02    0.315E-02
+DAV:  12    -0.338445722812E+03   -0.12088E-03   -0.41390E-04  7328   0.399E-02    0.125E-02
+DAV:  13    -0.338445724180E+03   -0.13677E-05   -0.74823E-05  7088   0.172E-02
+   1 F= -.33844572E+03 E0= -.33844524E+03  d E =-.338446E+03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338459916782E+03   -0.14194E-01   -0.55527E-02  6416   0.431E-01    0.121E-01
+DAV:   2    -0.338459593258E+03    0.32352E-03   -0.32496E-03  7344   0.112E-01    0.735E-02
+DAV:   3    -0.338459303631E+03    0.28963E-03   -0.68881E-04  6824   0.486E-02    0.144E-02
+DAV:   4    -0.338459311228E+03   -0.75967E-05   -0.95962E-05  7128   0.188E-02
+   2 F= -.33845931E+03 E0= -.33845881E+03  d E =-.135870E-01
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338478856247E+03   -0.19553E-01   -0.11284E-01  6400   0.632E-01    0.120E-01
+DAV:   2    -0.338479036239E+03   -0.17999E-03   -0.81515E-03  7400   0.183E-01    0.780E-02
+DAV:   3    -0.338478774835E+03    0.26140E-03   -0.85792E-04  7088   0.610E-02    0.262E-02
+DAV:   4    -0.338478780022E+03   -0.51872E-05   -0.23379E-04  7224   0.276E-02    0.114E-02
+DAV:   5    -0.338478779666E+03    0.35593E-06   -0.12494E-05  4112   0.785E-03
+   3 F= -.33847878E+03 E0= -.33847827E+03  d E =-.194684E-01
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338498123953E+03   -0.19344E-01   -0.18599E-01  6392   0.815E-01    0.123E-01
+DAV:   2    -0.338498975801E+03   -0.85185E-03   -0.12729E-02  7400   0.225E-01    0.835E-02
+DAV:   3    -0.338498780995E+03    0.19481E-03   -0.61589E-04  7216   0.551E-02    0.390E-02
+DAV:   4    -0.338498756830E+03    0.24165E-04   -0.20958E-04  7224   0.257E-02    0.118E-02
+DAV:   5    -0.338498749254E+03    0.75766E-05   -0.14887E-05  4352   0.880E-03
+   4 F= -.33849875E+03 E0= -.33849826E+03  d E =-.199696E-01
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338513806058E+03   -0.15049E-01   -0.24558E-01  6384   0.941E-01    0.131E-01
+DAV:   2    -0.338515174777E+03   -0.13687E-02   -0.16273E-02  7344   0.258E-01    0.915E-02
+DAV:   3    -0.338515027973E+03    0.14680E-03   -0.60162E-04  7272   0.577E-02    0.465E-02
+DAV:   4    -0.338515026665E+03    0.13084E-05   -0.24518E-04  7160   0.280E-02    0.124E-02
+DAV:   5    -0.338515028144E+03   -0.14792E-05   -0.21306E-05  4968   0.103E-02
+   5 F= -.33851503E+03 E0= -.33851460E+03  d E =-.162789E-01
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338523894813E+03   -0.88681E-02   -0.23719E-01  6328   0.945E-01    0.132E-01
+DAV:   2    -0.338525176194E+03   -0.12814E-02   -0.15035E-02  7344   0.250E-01    0.927E-02
+DAV:   3    -0.338525048811E+03    0.12738E-03   -0.52957E-04  7256   0.562E-02    0.480E-02
+DAV:   4    -0.338525047649E+03    0.11612E-05   -0.26040E-04  7168   0.298E-02    0.116E-02
+DAV:   5    -0.338525045355E+03    0.22944E-05   -0.29725E-05  5136   0.125E-02
+   6 F= -.33852505E+03 E0= -.33852468E+03  d E =-.100172E-01
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338530066068E+03   -0.50184E-02   -0.18113E-01  6296   0.831E-01    0.123E-01
+DAV:   2    -0.338530729841E+03   -0.66377E-03   -0.94720E-03  7416   0.199E-01    0.825E-02
+DAV:   3    -0.338530650907E+03    0.78934E-04   -0.37501E-04  7344   0.460E-02    0.414E-02
+DAV:   4    -0.338530648861E+03    0.20461E-05   -0.16875E-04  7248   0.241E-02    0.924E-03
+DAV:   5    -0.338530645115E+03    0.37455E-05   -0.20592E-05  4600   0.112E-02
+   7 F= -.33853065E+03 E0= -.33853036E+03  d E =-.559976E-02
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338532449514E+03   -0.18007E-02   -0.15161E-01  6144   0.750E-01    0.115E-01
+DAV:   2    -0.338532938969E+03   -0.48945E-03   -0.72729E-03  7304   0.181E-01    0.785E-02
+DAV:   3    -0.338532823945E+03    0.11502E-03   -0.40003E-04  7120   0.445E-02    0.293E-02
+DAV:   4    -0.338532829266E+03   -0.53204E-05   -0.11865E-04  7160   0.198E-02    0.810E-03
+DAV:   5    -0.338532828940E+03    0.32608E-06   -0.11960E-05  3816   0.775E-03
+   8 F= -.33853283E+03 E0= -.33853258E+03  d E =-.218382E-02
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338534144165E+03   -0.13149E-02   -0.31824E-02  6480   0.338E-01    0.475E-02
+DAV:   2    -0.338534312879E+03   -0.16871E-03   -0.21594E-03  7160   0.931E-02    0.372E-02
+DAV:   3    -0.338534269543E+03    0.43335E-04   -0.73908E-05  7056   0.202E-02    0.182E-02
+DAV:   4    -0.338534257576E+03    0.11968E-04   -0.51274E-05  6648   0.134E-02    0.347E-03
+DAV:   5    -0.338534256307E+03    0.12688E-05   -0.73529E-06  3536   0.608E-03
+   9 F= -.33853426E+03 E0= -.33853401E+03  d E =-.142737E-02
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338534745222E+03   -0.48765E-03   -0.40393E-03  6232   0.122E-01    0.184E-02
+DAV:   2    -0.338534758336E+03   -0.13113E-04   -0.18816E-04  7296   0.294E-02    0.127E-02
+DAV:   3    -0.338534755028E+03    0.33077E-05   -0.97160E-06  3744   0.737E-03
+  10 F= -.33853476E+03 E0= -.33853451E+03  d E =-.498721E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338535201585E+03   -0.44325E-03   -0.53350E-03  6176   0.140E-01    0.229E-02
+DAV:   2    -0.338535212328E+03   -0.10743E-04   -0.20842E-04  7384   0.313E-02    0.147E-02
+DAV:   3    -0.338535209488E+03    0.28396E-05   -0.12083E-05  3848   0.789E-03
+  11 F= -.33853521E+03 E0= -.33853496E+03  d E =-.454460E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338535629724E+03   -0.41740E-03   -0.78170E-03  6176   0.170E-01    0.262E-02
+DAV:   2    -0.338535652045E+03   -0.22321E-04   -0.30057E-04  7344   0.375E-02    0.170E-02
+DAV:   3    -0.338535650879E+03    0.11664E-05   -0.11844E-05  4016   0.816E-03
+  12 F= -.33853565E+03 E0= -.33853540E+03  d E =-.441391E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338536062505E+03   -0.41046E-03   -0.10864E-02  6144   0.201E-01    0.308E-02
+DAV:   2    -0.338536092532E+03   -0.30028E-04   -0.40988E-04  7336   0.438E-02    0.199E-02
+DAV:   3    -0.338536091148E+03    0.13849E-05   -0.16401E-05  4344   0.953E-03
+  13 F= -.33853609E+03 E0= -.33853583E+03  d E =-.440269E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338536491250E+03   -0.39872E-03   -0.14518E-02  6144   0.232E-01    0.360E-02
+DAV:   2    -0.338536529622E+03   -0.38372E-04   -0.55005E-04  7336   0.508E-02    0.230E-02
+DAV:   3    -0.338536527755E+03    0.18672E-05   -0.24174E-05  5080   0.112E-02
+  14 F= -.33853653E+03 E0= -.33853626E+03  d E =-.436608E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338536922315E+03   -0.39269E-03   -0.18562E-02  6128   0.262E-01    0.413E-02
+DAV:   2    -0.338536968655E+03   -0.46340E-04   -0.70277E-04  7344   0.575E-02    0.262E-02
+DAV:   3    -0.338536965986E+03    0.26686E-05   -0.34268E-05  5728   0.129E-02
+  15 F= -.33853697E+03 E0= -.33853669E+03  d E =-.438231E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338537326777E+03   -0.35812E-03   -0.22751E-02  6112   0.289E-01    0.463E-02
+DAV:   2    -0.338537380443E+03   -0.53666E-04   -0.87529E-04  7336   0.641E-02    0.291E-02
+DAV:   3    -0.338537377342E+03    0.31010E-05   -0.47248E-05  6576   0.147E-02
+  16 F= -.33853738E+03 E0= -.33853711E+03  d E =-.411355E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338538047540E+03   -0.66710E-03   -0.25170E-02  6112   0.306E-01    0.479E-02
+DAV:   2    -0.338538111736E+03   -0.64197E-04   -0.95849E-04  7312   0.675E-02    0.312E-02
+DAV:   3    -0.338538104785E+03    0.69516E-05   -0.56293E-05  6976   0.161E-02
+  17 F= -.33853810E+03 E0= -.33853784E+03  d E =-.727443E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338538571285E+03   -0.45955E-03   -0.22782E-02  6144   0.289E-01    0.402E-02
+DAV:   2    -0.338538675158E+03   -0.10387E-03   -0.11932E-03  7328   0.713E-02    0.282E-02
+DAV:   3    -0.338538669142E+03    0.60167E-05   -0.41373E-05  6032   0.147E-02
+  18 F= -.33853867E+03 E0= -.33853842E+03  d E =-.564357E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338538834372E+03   -0.15921E-03   -0.14228E-03  6560   0.701E-02    0.127E-02
+DAV:   2    -0.338538839047E+03   -0.46754E-05   -0.11141E-04  6880   0.217E-02    0.950E-03
+DAV:   3    -0.338538833604E+03    0.54433E-05   -0.10273E-05  3560   0.748E-03
+  19 F= -.33853883E+03 E0= -.33853858E+03  d E =-.164462E-03
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338538895278E+03   -0.56231E-04   -0.22155E-03  6512   0.879E-02    0.173E-02
+DAV:   2    -0.338538898531E+03   -0.32528E-05   -0.14214E-04  7136   0.249E-02    0.122E-02
+DAV:   3    -0.338538890804E+03    0.77267E-05   -0.19735E-05  4112   0.101E-02
+  20 F= -.33853889E+03 E0= -.33853864E+03  d E =-.571999E-04
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1    -0.338538885624E+03    0.12906E-04   -0.91608E-04  6184   0.573E-02    0.992E-03
+DAV:   2    -0.338538887426E+03   -0.18021E-05   -0.38879E-05  5608   0.139E-02
+  21 F= -.33853889E+03 E0= -.33853864E+03  d E =0.337748E-05
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ reached required accuracy - stopping structural energy minimisation
+ writing wavefunctions

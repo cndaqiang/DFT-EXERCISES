@@ -1,0 +1,34 @@
+SYSTEM=Pt H20
+
+ISATART=0
+ICHARGE=2
+
+ISMEAR=0
+SIGMA=0.01 #need test
+ALGO=Fast
+
+ENCUT=500
+
+
+ISIF=2
+#some parameter not set
+EDIFF=1E-5
+EDIFFG=-0.02
+NELM=400
+NSW=500
+
+
+LREAL=Auto
+
+#slab
+LDIPOL= .TRUE.
+IDIPOL=3
+
+#neb
+IBRION=3
+POTIM=0
+IOPT=3
+ICHAIN=0
+LCLIMB=.TRUE. #climbing image
+SPRING=-5
+IMAGES=5 #image number

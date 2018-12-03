@@ -1,0 +1,4 @@
+auto slab=NxNx1 bulk=NxMxQ
+0
+G
+18 18 18

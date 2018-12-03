@@ -1,0 +1,26 @@
+SYSTEM=hcn
+ISTART=0
+ICHARGE=2
+
+ISMEAR=0
+SIGMA=0.01
+
+ENCUT=500
+
+#IBRION=2
+EDIFF=1E-5
+EDIFFG=-0.02
+
+NELM=300
+NSW=100
+#POTIM=0.1
+ISIF=2
+
+#neb
+IBRION=3
+POTIM=0
+IOPT=1  #Must set  IOPT = 3 or 7 when using ISIF = 3
+ICHAIN=0
+LCLIMB=.TRUE. #climbing image
+SPRING=-5
+IMAGES=5 #image number

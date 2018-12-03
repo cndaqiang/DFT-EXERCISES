@@ -1,0 +1,1 @@
+for i in 1 2 2x2 2x2-nei 3x3; do Eslab=`grep "TOTEN" $i/OUTCAR | tail -1|awk '{printf"%12.6f \n",$5}'`; EH=`grep "TOTEN" $i-H/OUTCAR | tail -1|awk '{printf"%12.6f \n",$5}'`; miu=$(echo "scale=7;$EH-$Eslab" | bc); echo -e "$i\t$miu"; done

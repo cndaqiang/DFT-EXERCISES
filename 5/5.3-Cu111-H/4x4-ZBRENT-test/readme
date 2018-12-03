@@ -1,0 +1,6 @@
+IBRION=1
+BRIONS problems: POTIM should be increased
+
+IBRION=1 POTIM=0.5
+BRIONS problems: POTIM should be increased
+难道是结构太合适了

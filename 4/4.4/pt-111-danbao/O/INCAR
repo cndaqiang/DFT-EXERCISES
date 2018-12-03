@@ -1,0 +1,11 @@
+ISTART=0
+ICHARGE=2
+
+ISMEAR=0
+SIGMA=0.01 #need test
+
+ENCUT=500
+
+#some parameter not set
+EDIFF=1E-5
+NELM=400

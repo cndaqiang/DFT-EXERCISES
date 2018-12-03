@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#SBATCH --job-name=ini-neb
+#SBATCH --output=vasp.out
+#SBATCH --nodes=1
+#SBATCH --time=12:00:00
+
+dir=$(pwd)
+#cd ini 
+#srun -n 40 --mpi=pmi2  /home/chendq/soft/intel18/vasp.5.4.1-vtst/bin/vasp_std
+#cd $dir
+nebmake.pl ini/CONTCAR fin/CONTCAR 5
+srun -n 40 --mpi=pmi2  /home/chendq/soft/intel18/vasp.5.4.1-vtst/bin/vasp_std

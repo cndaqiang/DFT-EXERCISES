@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#SBATCH --job-name=jiao-neb
+#SBATCH --output=vasp.out
+#SBATCH --nodes=1
+#SBATCH --time=12:00:00
+
+nebmake.pl ini/CONTCAR fin/CONTCAR 5
+srun -n 40 --mpi=pmi2  /home/chendq/soft/intel18/vasp.5.4.1-vtst/bin/vasp_std

@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#SBATCH --job-name=fcc_zhendong_3+1_atom
+#SBATCH --output=vasp.out
+#SBATCH --nodes=1
+#SBATCH --time=12:00:00
+
+srun -n 40 --mpi=pmi2  /software/vasp/vasp.5.4.1/bin/vasp_std 

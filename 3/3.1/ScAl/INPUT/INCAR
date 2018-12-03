@@ -1,0 +1,21 @@
+SYSTEM=ScAl  jian dan li fang
+
+ISATART=0
+ICHARGE=2
+
+ISMEAR=0
+SIGMA=0.01 #need test
+
+ISPIN=0
+ENCUT=500
+
+IBRION=2
+ISIF=2
+#some parameter not set
+EDIFF=1E-5
+EDIFFG=0.001
+NELM=200
+NSW=100
+#POTIM=0.2
+
+

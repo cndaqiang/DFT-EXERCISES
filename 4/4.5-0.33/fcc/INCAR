@@ -1,0 +1,26 @@
+SYSTEM=Pt O
+
+ISTART=0
+ICHARGE=2
+
+ISMEAR=0
+SIGMA=0.1 #need test
+ALGO=Fast
+
+ENCUT=500
+
+IBRION=2
+ISIF=2
+#some parameter not set
+EDIFF=1E-4
+EDIFFG=1E-3
+NELM=400
+NSW=500
+POTIM=0.1 #defult 0.5
+
+LREAL=Auto
+
+#slab
+LDIPOL= .TRUE.
+IDIPOL=3
+

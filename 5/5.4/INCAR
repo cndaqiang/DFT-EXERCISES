@@ -1,0 +1,24 @@
+ISTART=0
+ICHARGE=2
+
+ISMEAR=0
+SIGMA=0.01 #need test
+
+ENCUT=500
+
+IBRION=5
+NFREE=2
+ISIF=2
+#some parameter not set
+EDIFF=1E-6
+#EDIFFG=1E-4
+NELM=400
+NSW=1
+POTIM=0.02 #defult 0.5
+
+LREAL=Auto
+
+#slab
+LDIPOL= .TRUE.
+IDIPOL=3
+

@@ -1,0 +1,25 @@
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    1 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.4.1 24Jun15 (build Oct 26 2018 17:15:27) complex                        
+  
+ POSCAR found type information on POSCAR  Cu
+ POSCAR found :  1 types and      16 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Ceperly-Alder, standard interpolation
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.133265657912E+04    0.13327E+04   -0.78245E+04  6912   0.188E+03
+DAV:   2     0.684266994480E+02   -0.12642E+04   -0.12046E+04  6912   0.411E+02
+DAV:   3    -0.639019492611E+02   -0.13233E+03   -0.12418E+03  7144   0.167E+02
+DAV:   4    -0.680841015812E+02   -0.41822E+01   -0.41475E+01  7464   0.335E+01
+ RHOSYG: internal error: stars are not distinct
+ RHOSYG: internal error: stars are not distinct
+ RHOSYG: internal error: stars are not distinct
+DAV:   5    -0.681136802212E+02   -0.29579E-01   -0.29561E-01  7700   0.238E+00 RHOSYG: internal error: stars are not distinct

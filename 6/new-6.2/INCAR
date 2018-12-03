@@ -1,0 +1,27 @@
+ISTART=0
+ICHARGE=2
+
+ISMEAR=0   
+SIGMA=0.01 #need test
+
+ENCUT=500
+
+#IBRION=2
+ISIF=3  #bulk=3 slab=2
+#some parameter not set
+EDIFF=1E-5
+EDIFFG=-0.02
+NELM=400
+NSW=500
+#POTIM=0.1 #defult 0.5
+
+
+#neb
+IBRION=3
+POTIM=0
+IOPT=3
+ICHAIN=0
+LCLIMB=.TRUE. #climbing image
+SPRING=-5
+IMAGES=5 #image number
+

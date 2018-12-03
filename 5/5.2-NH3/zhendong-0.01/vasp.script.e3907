@@ -1,0 +1,5 @@
+srun: got SIGCONT
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 3907 ON mngnode CANCELLED AT 2018-11-25T23:30:50 ***
+srun: forcing job termination
+slurmstepd: error: *** STEP 3907.0 ON mngnode CANCELLED AT 2018-11-25T23:30:50 ***

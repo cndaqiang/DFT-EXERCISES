@@ -1,0 +1,20 @@
+ISTART=0
+ICHARGE=2
+
+ISMEAR=0
+SIGMA=0.01 #need test
+
+ENCUT=500
+
+EDIFF=1E-5
+IBRION=5
+ISIF=2   #gu dong atom
+#EDIFFG=1E-4
+NELM=400
+NSW=1
+POTIM=0.02 #defult 0.5
+
+#slab
+#LDIPOL= .TRUE.
+#IDIPOL=3
+
