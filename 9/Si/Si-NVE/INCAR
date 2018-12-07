@@ -6,9 +6,9 @@ NELMIN= 6;  # min NELM # NELMDL=  0     # of ELM steps
    NBLOCK =      5;   #step to write CONCAR
    KBLOCK =    10  #NBLOCK*KBLOCK step to write XDATCAR   inner block; outer block
 #   TEIN   =    0.0    initial temperature
-   TEBEG  =    300  
-   TEEND  =   300 # temperature during run
-   SMASS  =  0    #Nose mass-parameter (am)
+   TEBEG  =    3000         
+#   TEEND  =   300 # temperature during run
+   SMASS  =  -3    # -3 NVE; -1 tui huo; >=0 NVT  Nose mass-parameter (am)
 #   estimated Nose-frequenzy (Omega)   =  0.10E-29 period in steps =****** mass=  -0.143E-26a.u.
            
 
