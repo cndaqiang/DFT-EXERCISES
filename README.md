@@ -7,3 +7,8 @@ DENSITY FUNCTIONAL THEORY EXERCISES
 
 ## contents
 ![image](https://user-images.githubusercontent.com/26620270/102570651-bff30380-4122-11eb-834e-3be47d54d2bd.png)
+
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/cndaqiang/DFT-EXERCISES.svg)](https://starchart.cc/cndaqiang/DFT-EXERCISES)
